@@ -17,7 +17,6 @@
 
 const form = document.querySelector('.login-form');
 const loginBtn = document.querySelector('button');
-console.log(loginBtn);
 
 form.addEventListener('submit', onSubmit);
 
