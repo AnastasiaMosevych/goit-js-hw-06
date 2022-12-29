@@ -26,8 +26,9 @@ function onSubmit(event) {
     elements: { email, password }
     } = event.currentTarget;
     
-    if (email.value === "" || password.value === "") {
-    alert("Please fill in all the fields!");
+  if (email.value === "" || password.value === "") {
+    event.preventDefault();
+    return alert("Please fill in all the fields!");
     }
     
     console.log(`Email: ${email.value}, Password: ${password.value}`);
